@@ -23,6 +23,11 @@ filegroup {
     srcs: ["apns-conf.xsd"],
 }
 
+filegroup {
+    name: "sample_apns_conf",
+    srcs: [":apns-conf"],
+}
+
 sh_binary_host {
     name: "make-apns",
     src: "make-apns.sh",
